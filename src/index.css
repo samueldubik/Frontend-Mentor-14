@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    div {
+        @apply bg-mobile bg-red min-h-screen w-screen font-poppins lg:flex lg:bg-desktop
+    }
+
+    h1 {
+        @apply font-bold text-[#ffffff] text-3xl text-center pt-20 lg:mt-[25vh] lg:text-6xl lg:w-2/3 lg:ml-[26%] lg:text-left;
+    }
+
+    header > p {
+        @apply font-normal text-[#ffffff] text-center pt-10 px-6 opacity-80 lg:text-xl lg:text-left lg:w-2/3 lg:ml-[23%];
+    }
+
+    main {
+        @apply mt-[10vh] ml-[-5vw] mr-[7vw] pb-14;
+    }
+
+    section {
+        @apply mt-16 bg-blue h-20 w-10/12 ml-[15%] rounded-lg shadow-xl text-center text-lg px-10 pt-3 text-[#ffffff];
+    }
+
+    span {
+        @apply font-semibold;
+    }
+
+    article {
+        @apply bg-[#ffffff] w-10/12 ml-[15%] mt-5 rounded-lg pt-5 shadow-xl;
+    }
+
+    input {
+        @apply ml-[10%] w-[80%] h-10 border-[1px] border-gray rounded-md mt-2 pl-5 focus:outline-dark lg:h-16 lg:text-lg lg:mt-4;
+    }
+
+    button {
+        @apply bg-green w-[80%] mt-5 h-10 rounded-md ml-[10%] text-[#ffffff] font-medium lg:h-16 lg:text-lg lg:mt-4;
+    }
+
+    article > p {
+       @apply text-gray text-center text-xs mt-2 px-10 pb-5 font-thin lg:text-sm; 
+    }
+
+    a {
+        @apply text-red font-semibold;
+    }
+}
