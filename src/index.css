@@ -6,12 +6,16 @@
 
 @layer base {
 
-    div {
+    body {
         @apply bg-mobile bg-red min-h-screen w-screen font-poppins lg:flex lg:bg-desktop
     }
 
     h1 {
-        @apply font-bold text-[#ffffff] text-3xl text-center pt-20 lg:mt-[25vh] lg:text-6xl lg:w-2/3 lg:ml-[26%] lg:text-left;
+        @apply font-bold text-[#ffffff] text-3xl text-center pt-20 lg:mt-[20vh] lg:text-6xl lg:w-2/3 lg:ml-[26%] lg:text-left;
+    }
+
+    h3 {
+        @apply text-xs text-right mr-[10%] mt-2 text-red font-medium lg:text-base;
     }
 
     header > p {
@@ -19,7 +23,7 @@
     }
 
     main {
-        @apply mt-[10vh] ml-[-5vw] mr-[7vw] pb-14;
+        @apply mt-[5vh] ml-[-5vw] mr-[7vw] pb-14 lg:min-w-[550px] lg:w-2/3;
     }
 
     section {
@@ -48,5 +52,11 @@
 
     a {
         @apply text-red font-semibold;
+    }
+}
+
+@layer components { 
+    .error {
+        @apply w-[25px] h-[25px] mt-3.5 -ml-10 lg:mt-8;
     }
 }
